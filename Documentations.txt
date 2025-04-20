@@ -1,0 +1,351 @@
+Junit links
+
+https://www.baeldung.com/parameterized-tests-junit-5
+https://medium.com/@maria.michou/data-driven-testing-with-spock-and-junit5-who-wins-3fd50d7cb431
+http://robertmarkbramprogrammer.blogspot.com/2018/04/data-driven-tests-in-junit-5-with.html
+https://automationrhapsody.com/data-driven-testing-junit-parameterized-tests/
+
+Spring Core:
+
+https://docs.spring.io/spring-framework/docs/3.0.x/spring-framework-reference/html/overview.html
+
+<properties>
+   <spring.version>5.3.0</spring.version>
+  </properties>
+  <dependencies>
+  <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>${spring.version}</version>
+</dependency>
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>${spring.version}</version>
+</dependency>
+  </dependencies>
+  
+  After Created AppConf.xml file needs to add below contents
+  
+  <beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+Beans Reference Links
+		
+https://medium.com/swlh/the-lifecycle-of-spring-beans-b0edb8936189
+
+https://dzone.com/articles/spring-bean-lifecycle
+
+https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/beans.html
+
+Project Link GitHub:
+
+https://github.com/balachandarkec/SpringDIDemo
+
+https://github.com/balachandarkec/AutoWireByjavaConfig
+
+https://github.com/balachandarkec/PlayListAppByAutowiring
+
+Spring MVC Dependencies
+
+    <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.1.0.RELEASE</version>
+        </dependency>
+        <!-- JSTL Dependency -->
+        <dependency>
+            <groupId>javax.servlet.jsp.jstl</groupId>
+            <artifactId>javax.servlet.jsp.jstl-api</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>standard</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+        <!-- Servlet Dependency -->
+        <dependency>
+             <groupId>javax.servlet</groupId>
+             <artifactId>javax.servlet-api</artifactId>
+             <version>3.1.0</version>
+             <scope>provided</scope>
+        </dependency>
+        <!-- JSP Dependency -->
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>javax.servlet.jsp-api</artifactId>
+            <version>2.3.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+Project Link in GitHub
+
+https://github.com/balachandarkec/MVCDemoApp.git
+
+Spring MVC Form
+
+https://github.com/balachandarkec/SpringMVCFormsDemo
+
+
+Links
+
+https://dzone.com/articles/spring-mvc-jsp-form-tags-example
+
+https://dzone.com/tutorials/java/spring/spring-form-tags-1.html
+
+https://www.programmersought.com/article/95391198568/
+
+https://beginnersbook.com/jsp-jstl-tutorial-jstl-functions-and-core-tags/
+
+https://programmersought.com/article/63783192086/
+
+
+MYSQL
+
+<properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.13</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.3.7.Final</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+
+Hibernate :
+
+https://github.com/balachandarkec/HibernateDemo
+
+hibernate.cfg.xml:
+------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/Book</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"></property>
+        <property name="hibernate.connection.pool_size">1</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <mapping resource="book.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>
+
+
+Ont to One
+
+https://github.com/balachandarkec/HBOne2One
+
+https://github.com/balachandarkec/SpringMVCSamples
+
+
+Springboot youtube videos
+
+https://www.youtube.com/watch?v=8TEAycT5HfY
+
+https://www.youtube.com/watch?v=y8IQb4ofjDo&list=PLqq-6Pq4lTTZSKAFG6aCDVDP86Qx4lNas
+
+https://developer.okta.com/blog/2019/05/22/java-microservices-spring-boot-spring-cloud
+
+
+Many to Many
+
+https://dzone.com/articles/introduction-to-spring-data-jpa-part-8-many-to-man
+
+https://www.callicoder.com/hibernate-spring-boot-jpa-many-to-many-mapping-example/
+
+https://stackoverflow.com/questions/23837561/jpa-2-0-many-to-many-with-extra-column
+
+https://thorben-janssen.com/hibernate-tip-many-to-many-association-with-additional-attributes/
+
+https://stackoverflow.com/questions/34206245/how-to-use-a-primary-key-also-as-a-foreign-key-reference-with-jpa-and-hibernate
+
+
+Spring Security - JWT - Json web Token
+
+https://www.youtube.com/watch?v=-owDXanjSEQ
+
+https://www.kindsonthegenius.com/spring-boot/jwtjson-web-token-with-springboot-step-by-step-tutorial-part-1/
+
+https://www.youtube.com/watch?v=VZjs6-_yccw
+
+https://www.youtube.com/watch?v=lA18U8dGKF8&t=755s
+
+https://www.youtube.com/watch?v=TNt3GHuayXs&t=138s
+
+
+Explanation JWT
+
+https://loizenai.com/spring-boot-security-jwt-token-bsed-authentication-example-mysql-spring-jpa-restapis/
+
+MS
+
+https://github.com/balachandarkec/DepartmentMS
+
+https://github.com/balachandarkec/UserMicroService
+
+Swagger Urls
+
+http://localhost:8081/swagger-ui.html#/
+
+http://localhost:8082/swagger-ui.html#/
+
+http://localhost:8083/swagger-ui.html#/
+
+Latest swagger-ui :
+
+http://localhost:8081/swagger-ui/
+
+http://localhost:8082/swagger-ui/
+
+http://localhost:8083/swagger-ui/
+
+After Config with ApI Gateway Swagger URL
+
+http://host.docker.internal:8081/swagger-ui/
+
+
+Spring Test 
+
+https://mkyong.com/spring-boot/spring-test-how-to-test-a-json-array-in-jsonpath/
+
+GitHub
+
+https://github.com/balachandarkec/demoApp
+
+Microservices:
+
+https://medium.com/@niral22/spring-cloud-gateway-tutorial-5311ddd59816
+https://www.baeldung.com/spring-cloud-gateway
+https://medium.com/omarelgabrys-blog/microservices-with-spring-boot-circuit-breaker-log-tracing-part-4-9cdf5e898988
+https://www.baeldung.com/spring-cloud-netflix-hystrix
+
+Jmeter
+
+
+Return PDF File Response
+
+https://www.codejava.net/frameworks/spring-boot/pdf-export-example
+
+https://zetcode.com/springboot/servepdf/
+
+https://www.javainuse.com/spring/boot-file-download
+
+https://zetcode.com/all/#springboot
+
+https://zetcode.com/springboot/servepdf/
+
+
+MongoDb
+
+https://github.com/balachandarkec/mongo-demoApp
+
+https://github.com/users/balachandarkec/projects/3
+
+
+Employee Name - Employee-Service - 8081
+Project - Project-Service - 8082 
+Allocation - Allocation-Service - 8083
+Timesheet - Timesheet-Service - 8084
+Reporting - Reporting-Service - 8085
+
+Service Registry - 8086
+
+http://localhost:8086/ 
+
+Gateway Server  - 8087
+
+Hystrix Server - 8088
+
+http://localhost:8088/hystrix
+
+Config Server - 8089
+
+JWT Security Service - 8090
+
+Zipkin Service - http://127.0.0.1:9411/zipkin/
+
+
+Docker :
+
+https://www.youtube.com/watch?v=e3YERpG2rMs
+
+https://www.youtube.com/watch?v=fvEWoy1xOvo&t=316s
+
+https://www.youtube.com/watch?v=mszE-OCI2V4
+
+HQL
+
+https://dzone.com/articles/hibernate-query-language
+
+https://www.baeldung.com/hibernate-inheritance
+
+----------------------------
+
+
+https://hackr.io/blog/microservices-interview-questions
+
+
+https://quizizz.com/admin/quiz/5c304464bf55f9001bfe9969/spring-boot-level
+
+
+https://www.sanfoundry.com/spring-multiple-choice-questions-answers/
+
+------------------------------------------------------------------
+
+
+emp 
+
+1
+2
+3
+4
+
+project
+
+5
+6
+7
+8
+
+Allotment
+1122
+1123
+
+--------------------------------------------------------
+
+
+Docker spring mysql 
+
+https://www.javainuse.com/devOps/docker/docker-mysql
